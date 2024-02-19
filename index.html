@@ -73,9 +73,9 @@
                     </div>
                   </div>
                 </div>
-                <template>
-                  <img :src="tempProduct.imagesUrl" alt="" class="images m-2">
-                </template>
+                <div >
+                  <img v-for="img in tempProduct.imagesUrl" :src="img" alt="" class="images m-2">
+                </div>
             </div>
           </div>
         </div>
